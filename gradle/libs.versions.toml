@@ -1,17 +1,39 @@
 [versions]
+accompanist = "0.31.4-beta"
 agp = "8.2.0-alpha09"
+appCenter = "4.4.5"
+hiddenapibypass = "4.3"
+libsu = "5.1.0"
+lottie = "6.0.1"
+startup-runtime = "1.1.1"
+timber = "5.0.1"
+xposed-api = "82"
 kotlin = "1.8.10"
-core-ktx = "1.9.0"
+core-ktx = "1.10.1"
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 lifecycle-runtime-ktx = "2.6.1"
 activity-compose = "1.7.2"
-compose-bom = "2023.03.00"
+compose-bom = "2023.06.01"
 appcompat = "1.6.1"
 material = "1.9.0"
+androidx-navigation-compose = "2.7.0-beta01"
 
 [libraries]
+accompanist-drawablepainter = { module = "com.google.accompanist:accompanist-drawablepainter", version.ref = "accompanist" }
+accompanist-insets = { module = "com.google.accompanist:accompanist-insets", version.ref = "accompanist" }
+accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle-runtime-ktx" }
+androidx-startup-runtime = { module = "androidx.startup:startup-runtime", version.ref = "startup-runtime" }
+appcenter-analytics = { module = "com.microsoft.appcenter:appcenter-analytics", version.ref = "appCenter" }
+appcenter-crashes = { module = "com.microsoft.appcenter:appcenter-crashes", version.ref = "appCenter" }
+libsu-core = { module = "com.github.topjohnwu.libsu:core", version.ref = "libsu" }
+libsu-io = { module = "com.github.topjohnwu.libsu:io", version.ref = "libsu" }
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie" }
+lsposed-hiddenapibypass = { module = "org.lsposed.hiddenapibypass:hiddenapibypass", version.ref = "hiddenapibypass" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+xposed-api = { module = "de.robv.android.xposed:api", version.ref = "xposed-api" }
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
@@ -28,6 +50,7 @@ ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidx-navigation-compose" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

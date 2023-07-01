@@ -70,33 +70,26 @@ dependencies {
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
 
-    val nav_version = "2.7.0-beta01"
-    implementation("androidx.navigation:navigation-compose:$nav_version")
 
-    compileOnly("de.robv.android.xposed:api:82")
-    implementation("org.lsposed.hiddenapibypass:hiddenapibypass:4.3")
+    implementation(libs.androidx.startup.runtime)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.navigation.compose)
 
-    // toolchain
-    val libsuVersion = "5.1.0"
-    implementation("com.github.topjohnwu.libsu:core:${libsuVersion}")
-    implementation("com.github.topjohnwu.libsu:io:${libsuVersion}")
+    implementation(libs.accompanist.insets)
+    implementation(libs.accompanist.systemuicontroller)
+    implementation(libs.accompanist.drawablepainter)
 
+    implementation(libs.lottie.compose)
 
-    implementation("com.google.accompanist:accompanist-insets:0.31.4-beta")
-    implementation("com.google.accompanist:accompanist-systemuicontroller:0.31.4-beta")
-    implementation("com.google.accompanist:accompanist-drawablepainter:0.31.4-beta")
+    compileOnly(libs.xposed.api)
+    implementation(libs.lsposed.hiddenapibypass)
 
+    implementation(libs.libsu.core)
+    implementation(libs.libsu.io)
 
-    val lottieVersion = "6.0.1"
-    implementation("com.airbnb.android:lottie-compose:$lottieVersion")
+    implementation(libs.timber)
 
-    // logging
-    implementation("com.jakewharton.timber:timber:5.0.1")
-
-    // startup
-    implementation("androidx.startup:startup-runtime:1.1.1")
-
-    implementation("org.simpleframework:simple-xml:2.7.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+    implementation(libs.appcenter.analytics)
+    implementation(libs.appcenter.crashes)
 
 }
