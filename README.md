@@ -4,6 +4,9 @@
 
 ![image](https://github.com/runtimme/MIUI-REFINE/assets/24622986/357519ff-234d-4e0f-8a05-6d2e87bf1bdc)
 
+![image](https://github.com/runtimme/MIUI-REFINE/assets/24622986/b1e30a21-acca-4588-bb49-c536c3c6e7d2)
+
+
 ⚠️注意： 
 本项目在MIUI14、LSPosed上开发与测试
 
